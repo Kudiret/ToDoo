@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#001F3F"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- Поле ввода задачи -->
+    <EditText
+        android:id="@+id/taskInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите задачу"
+        android:padding="16dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:fontFamily="sans-serif-light"
+        android:textSize="16sp"
+        android:inputType="text" />
+
+    <!-- Контейнер кнопок -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskInput"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Кнопка Записать -->
+        <Button
+    android:id="@+id/btnAddTask"
+    android:layout_width="0dp"
+    android:layout_height="52dp"
+    android:layout_weight="1"
+    android:layout_marginEnd="12dp"
+    android:background="@drawable/rounded_button_selector"
+    android:text="✓"
+    android:textColor="#001F3F"
+    android:textSize="20sp"
+    android:fontFamily="sans-serif-medium" />
+
+
+        <!-- Кнопка Голос -->
+        <Button
+            android:id="@+id/btnVoiceInput"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/rounded_button_selector"
+            android:text="🎤"
+            android:textColor="#001F3F"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
